@@ -26,14 +26,14 @@ module.exports = {
           {
             test: /\.(css|less)$/i,
             use: [
-              {
+              /* {
                 loader: MiniCssExtractPlugin.loader,
                 options: {
                   publicPath: '../../',
                   hmr: false,
                 },
-              },
-              /* 'style-loader', */
+              }, */
+              'style-loader',
               'css-loader',
               {
                 loader: 'postcss-loader',

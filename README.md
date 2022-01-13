@@ -12,7 +12,7 @@
 
 ### todo
 
-- Fix htML-webpack-plugin to set title dynamically
+- Fix html-webpack-plugin to set title dynamically
 
 ```js
 // webpack.config.js
