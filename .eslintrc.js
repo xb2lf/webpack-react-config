@@ -19,7 +19,10 @@ module.exports = {
       'js': 'never',
       'json': 'never',
       "jsx": 'never',
-    }]
+    }],
+    "no-console": 0,
+    "eqeqeq": 2,
+    "no-alert": 2
   },
   "extends": ["plugin:import/recommended"]
 }

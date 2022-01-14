@@ -1,10 +1,11 @@
 import React from 'react'
-import { Header, Main } from './components'
+import { Header, Main,Footer } from './components'
 export default function App() {
   return (
     <div>
       <Header />
       < Main />
+      <Footer/>
     </div>
   )
 }
