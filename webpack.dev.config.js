@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const WorkboxWebpackPlugin = require('workbox-webpack-plugin');
 
 const CommonCSSLoader = [
   {
@@ -156,6 +157,14 @@ module.exports = {
         // 移除注释
         removeComments: true,
       },
+    }),
+    /**
+    * 1. 帮助serviceworker快速启动
+    * 2. 删除旧的serviceworker
+   */
+    new WorkboxWebpackPlugin.GenerateSW({
+      clientsClaim: true,
+      skipWaiting: true,
     }),
   ],
   mode: "development",
